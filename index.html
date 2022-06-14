@@ -165,7 +165,7 @@
   </header>
 
 <!--main CTA-->
-  <section class="pt-20 p-12 sm:p-16 sm:pt-24 lg:p-24 z-1 h-screen flex items-center" id="start"> 
+  <section class="pt-20 p-10 sm:p-16 sm:pt-24 lg:p-24 z-1 h-screen flex items-center" id="start"> 
     <!--mouse move effect container-->
     <div class="mouse-move bg-gray-100 dark:bg-gray-900"> 
       <div> <!--space-->
@@ -271,13 +271,20 @@
     
     <!--text-->
     <div class="max-w-xl mx-auto text-center z-10 flex flex-col items-center">
-      <h1 class="mt-2 text-3xl font-bold sm:text-5xl mb-6 dark:text-gray-100">
-        Научитесь говорить<br>на языке свободно!
-      </h1>
-
-      <h2 class="text-xl mb-10 dark:text-gray-300">Онлайн-курсы английского в школе StarLingo</h2>
-      
-      <div class="leading-5 text-gray-500 dark:text-gray-300 flex flex-col gap-2 mb-8">
+      <div 
+        class="flex flex-col py-6 px-2 sm:px-6 rounded-xl gap-6 mb-4
+              backdrop-blur bg-opacity-60 dark:bg-opacity-60 bg-gray-100 dark:bg-gray-900 "
+      >
+        <h1 class="text-2xl font-bold sm:text-5xl dark:text-gray-100">
+          Научитесь говорить<br>на языке свободно!
+        </h1>
+        <h2 class="text-xl dark:text-gray-100">Онлайн-курсы английского в школе StarLingo</h2>
+      </div>
+      <!--list-->
+      <div 
+        class="leading-5 text-gray-800 dark:text-gray-100 flex-col gap-2 mb-8 hidden sm:flex mt-4 p-4 rounded-xl
+              backdrop-blur bg-opacity-60 dark:bg-opacity-60 bg-gray-100 dark:bg-gray-900 lg:bg-transparent"
+      >
         <div class="flex items-center gap-2">
           <span class="material-symbols-rounded text-amber-500">done</span>
           <span>Для взрослых и детей от 5 лет</span>
@@ -293,7 +300,7 @@
           <span>Воркшопы и игры на английском</span>
         </div>
       </div>
-      
+      <!--button-->
       <div class="text-xl relative">
         <a href="#contact" class="block px-10 py-3 font-medium text-white 
         bg-amber-500
@@ -302,7 +309,9 @@
         </a> 
       </div>
 
-      <h2 class="text-lg mt-4 px-4 py-2 rounded-xl dark:text-white backdrop-blur bg-opacity-60 dark:bg-opacity-60 bg-gray-200 dark:bg-gray-900 lg:bg-transparent">
+      <h2 class="text-lg mt-4 px-4 py-2 rounded-xl dark:text-white 
+                backdrop-blur bg-opacity-60 dark:bg-opacity-60 bg-gray-100 dark:bg-gray-900 lg:bg-transparent"
+      >
         Пробное занятие бесплатно!
       </h2>
       
@@ -439,7 +448,10 @@
   </section>
 
 <!--prices section-->
-  <section class="w-screen md:h-screen py-10 md:py-0 bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center relative" id="prices">
+  <section 
+    class="w-screen md:h-screen py-10 md:py-0 bg-gray-100 dark:bg-gray-900 flex flex-col justify-center items-center relative"
+    id="prices"
+  >
     <div> <!--background-->
       <img src="img/space1.svg" class="absolute w-96 h-96 -rotate-90 opacity-30 top-14 -left-10">
       <!-- <img src="img/space1-wstars.svg" class="absolute w-[400px] h-[400px] top-20 -right-32"> -->
@@ -451,9 +463,12 @@
     </div>
     
     <!--pricing text-->
-    <div class="flex flex-col items-center mb-16 z-30">
-      <h2 class="text-3xl font-bold tracking-tight sm:text-4xl 
-      px-4 py-2 rounded-xl dark:text-white backdrop-blur bg-opacity-60 dark:bg-opacity-60 bg-gray-200 dark:bg-gray-900 xl:bg-transparent">
+    <div class="flex flex-col items-center mb-16 z-30 px-4 sm:px-0">
+      <h2 
+        class="text-3xl font-bold tracking-tight sm:text-4xl 
+              px-4 py-2 rounded-xl dark:text-white backdrop-blur 
+              bg-opacity-60 dark:bg-opacity-60 bg-gray-100 dark:bg-gray-900 xl:bg-transparent"
+      >
         Выберите план обучения
       </h2>
     </div>
@@ -650,7 +665,7 @@
           <div class="hidden lg:mt-8 lg:flex lg:gap-4"> <!--large layout control buttons-->
             <button
               aria-label="Previous slide"
-              class="p-3 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-400 hover:text-white prev-button transition-all"
+              class="p-3 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-500 hover:text-white prev-button transition-all"
             >
               <svg
                 class="w-5 h-5 transform -rotate-180"
@@ -670,7 +685,7 @@
   
             <button
               aria-label="Next slide"
-              class="p-3 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-400 hover:text-white next-button transition-all"
+              class="p-3 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-500 hover:text-white next-button transition-all"
             >
               <svg
                 class="w-5 h-5"
@@ -817,7 +832,7 @@
       <div class="flex justify-center gap-4 mt-8 lg:hidden"> <!--small layout control buttons-->
         <button
           aria-label="Previous slide"
-          class="p-4 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-400 hover:text-white prev-button transition-all z-20"
+          class="p-4 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-500 hover:text-white prev-button transition-all z-20"
         >
           <svg
             class="w-5 h-5 transform -rotate-180"
@@ -837,7 +852,7 @@
   
         <button
           aria-label="Next slide"
-          class="p-4 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-400 hover:text-white next-button transition-all z-20"
+          class="p-4 text-gray-500 bg-white dark:bg-gray-800 shadow rounded-full hover:bg-amber-500 hover:text-white next-button transition-all z-20"
         >
           <svg
             class="w-5 h-5"
@@ -1041,7 +1056,8 @@
     <!--form-->
     <form 
       class="flex justify-center items-center md:flex-row flex-col md:items-end w-full sm:w-96 md:w-full gap-4
-            mx-auto px-2 sm:px-0 z-20">
+            mx-auto px-2 sm:px-0 z-20"
+    >
       <div class="w-full md:w-60">
         <label for="text" class="text-sm font-medium dark:text-gray-400">ФИО</label>
 
@@ -1058,10 +1074,10 @@
         <label for="email1" class="text-sm font-medium dark:text-gray-400">E-mail</label>
 
         <input
-          type="email1"
+          type="email"
           id="email1"
           class="w-full p-4 text-sm border-gray-200 rounded-lg shadow-sm focus:ring-amber-500 focus:border-amber-500
-                dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700"
+              dark:bg-gray-800 dark:text-gray-300 dark:border-gray-700"
           placeholder="Введите e-mail"
         />
       </div>
@@ -1082,8 +1098,8 @@
 
       <img src="img/star-laptop-only.svg" class="absolute w-96 h-96 -bottom-28 left-0 lg:left-10 z-10">
     </div>
-
-    <div class="w-full p-8 text-right flex flex-col items-end z-20">
+    <!--contacts block-->
+    <div class="w-full p-8 text-center sm:text-right flex justify-center sm:justify-end z-20">
       <div class="bg-gray-100 dark:bg-gray-900 bg-opacity-60 dark:bg-opacity-60 backdrop-blur sm:backdrop-blur-none p-4 rounded-xl sm:bg-transparent">
         <p class="mt-2 text-2xl font-bold dark:text-white sm:text-3xl">
           Наши контакты
@@ -1095,7 +1111,7 @@
         <p class="mt-1 block text-lg">
           starlingo-school@gmail.com
         </p>
-        <div class="flex mt-8 justify-end space-x-6"> <!--socials-->
+        <div class="flex mt-8 justify-around gap-6"> <!--socials-->
           <a class="hover:opacity-60" href="">
             <span class="sr-only"> Facebook </span>
 
@@ -1293,7 +1309,7 @@
   <!--to top button-->
   <button 
     class="w-16 h-16 lg:w-20 lg:h-20 rounded-full p-5 bottom-10 right-10 sm:bottom-14 sm:right-14 fixed z-[100] items-center justify-center
-        bg-amber-500 hover:bg-amber-600 hover:scale-105 transition-all hidden"
+        bg-amber-500 hover:bg-amber-600 hover:scale-105 transition-all hidden "
     onclick="topFunction()" 
     id="myBtn" 
     title="наверх"
